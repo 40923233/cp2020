@@ -1,0 +1,217 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923233 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923233 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='首頁.html'>首頁</a><ul class='dropdown'><li><a href='cool down(冷卻).html'>cool down(冷卻)</a><li><a href='Network overview(網路概述).html'>Network overview(網路概述)</a><li><a href='Network hardware(網路硬件).html'>Network hardware(網路硬件)</a><li><a href='Internet media(網路媒體).html'>Internet media(網路媒體)</a><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Network overview(網路概述) << <a href='Network overview(網路概述).html'>Previous</a> <a href='Internet media(網路媒體).html'>Next</a> >> Internet media(網路媒體)<br /><h1>Network hardware(網路硬件)</h1>
+<p>網絡設備根據其用途而有所不同。各種設備，例如集線器，交換機，路由器，網橋，網絡適配器和媒體。</p>
+<p>Network equipment varies according to its purpose. Various devices such as hubs, switches, routers, bridges, network adapters and media.</p>
+<p><strong><span style="color: #cc99ff;">hub(樞紐)</span></strong></p>
+<p>A hub is one of the simplest network devices. It connects multiple network devices and workstations to each other to form a network. It works by receiving a signal in one port and rebroadcasting the signal to all other ports. Hubs can be divided into two types: active or passive. The active hub repeats the received signal on all its ports and amplifies the signal to its maximum strength. Passive hubs only repeat the signal without adding any amplification. Hubs are an older technology that can be used to easily increase the number of available ports, but cause too many network errors and conflicts. There are newer variants of hubs, called smart hubs.</p>
+<p>The three basic types of Ethernet hubs are as follows:</p>
+<p>Passive hub-repeat signal without amplification<br/>Active Hub – Repeatedly amplify the signal<br/>Smart Hub-Active hub with enhanced functions (for example: SNMP)</p>
+<p>There is no inherent security designed inside the hub, but all information received from one port is rebroadcasted to another port. Essentially, the hub only relies on the connected workstation to "listen" to information on its port (if the information is specifically for that workstation). When the information is not sent to it, the workstation should just ignore the data.</p>
+<p>集線器是最簡單的網絡設備之一，將多個網絡設備和工作站相互連接，形成一個網絡，通過在一個端口中接收信號並將該信號重新廣播到其所有其他端口來工作。集線器可以分為主動或被動兩種。活動集線器會在其所有端口上重複接收到的信號，並將該信號放大到最大強度。無源集線器僅重複信號不增加任何放大。集線器是一種較舊的技術，可用於輕鬆增加可用端口的數量，但導致過多的網絡錯誤和衝突。集線器有較新的變體，稱為智能集線器。</p>
+<p>以太網集線器的三種基本類型如下：</p>
+<p>無源集線器–重複信號而不放大<br/>有源集線器–重複放大信號<br/>智能集線器–具有增強功能的活動集線器（例如：SNMP）</p>
+<p>集線器內部沒有設計固有的安全性，只是將從一個端口接收的所有信息重新廣播到另一個端口。本質上，集線器僅依賴於連接的工作站來“偵聽”其端口上的信息（如果該信息專門針對該工作站）。當信息沒有發送給它時，工作站應該只是忽略數據。</p>
+<p><span style="color: #cc99ff;"><strong>Bridge(橋梁)</strong></span></p>
+<p>The hub functions in a single conflict domain to operate together. A network device that can break the conflict domain into smaller units is needed to help the network operate more efficiently. This interconnection of multiple network segments makes the network Can be extended to large networks without significantly reducing the performance of the network. The bridge is smarter than the hub, and is actually analyzing the source, the media access control (MAC) address, and the MAC address for the unique identifier of the network interface for communication. In the frames entering the bridge, the internal MAC table is filled according to these addresses. Future routing decisions will be based on those destination MAC addresses. By only forwarding information to the root hub associated with the network device, this intelligent forwarding based on the target MAC address in the frame can reduce network traffic.</p>
+<p>集線器在單個衝突域中起作用的設備一起運行，需要一個可以將該衝突域分解為較小單元的網絡設備，以幫助網絡更高效地運行，多個網段的這種互連在一起使網絡可以擴展到大型網絡，而不會顯著降低該網絡的性能。橋比集線器更智能，實際上是在分析源、媒體訪問控制（MAC）地址MAC地址給網絡接口進行通信的唯一標識符。在進入網橋的幀中，並根據這些地址填充內部MAC表。未來的路由決策將基於那些目標MAC地址。通過僅將信息轉發到與網絡設備關聯的根集線器，這種基於幀中目標MAC地址的智能轉發可減少網絡流量。</p>
+<p><span style="color: #cc99ff;"><strong>switch(開關)</strong></span></p>
+<p>The switch is used to connect multiple network segments together, and each port on the switch acts as its own conflict domain. Each port on the switch works like a hub, with a bridge that connects the port of the hub to the workstation, thereby reducing the chance of network conflicts to zero.</p>
+<p>Switches are smart devices. They make forwarding decisions based on the MAC addresses they learn and place them in their MAC tables. The switch will analyze the source MAC address when it is input, and then fill in the source MAC address in the form of a frame to match the switch port. This allows the switch to forward frames only to the correct device on a single switch port, thereby improving security and network speed.</p>
+<p>交換機用於將多個網段連接在一起，交換機上的每個端口都充當其自己的衝突域。交換機上的每個端口都像是集線器一樣工作，帶有將集線器的端口連接到工作站的網橋，從而將網絡衝突的機會降低到零。</p>
+<p>交換機是智能設備，它們根據其學習到的MAC地址並將其放置在其MAC表中做出轉發決定。交換機在輸入源MAC地址時會對其進行分析，然後以幀的形式填充源MAC地址，以使其與交換機端口匹配。這允許交換機僅將幀轉發到單個交換機端口上的正確設備，從而提高安全性和網絡速度。</p>
+<p><span style="color: #cc99ff;"><strong>router(路由器)</strong></span></p>
+<p>The router separates network segments according to IP addresses, and forwards data packets out of the network segment only during configuration. The broadcast domain created by the switch can be decomposed and it is up to network professionals to configure the router to connect different networks together and perform intelligent routing decisions. The router has the closest relationship with the computer because it has a processor and a complex operating system. The router compares the IP addresses of the source and destination of the packet, and forwards traffic to or from the network based on this logical address (for example, IPv4 and IPv6 addresses). Routers are usually feature-rich devices and support multiple interface types, including unshielded twisted pair, optical fiber, and coaxial cable connections. Like a switch, each port on the router is a separate collision domain. Using access control lists, routers can block access to the network based on ports or addresses. This blocking increases the security of the network.</p>
+<p>路由器根據IP地址將網段分開，並且僅在配置時將數據包轉發出網段。可以分解由交換機創建的廣播域由網絡專業人員決定將路由器配置為將不同的網絡連接在一起並執行智能路由決策。路由器與計算機的關係最為密切，因為它具有處理器和復雜的操作系統。路由器比較數據包源和目標的IP地址，並基於此邏輯地址（例如，IPv4和IPv6地址）將流量轉發到網絡或從網絡轉發流量。路由器通常是功能豐富的設備，並且支持多種接口類型，包括非屏蔽雙絞線，光纖和同軸電纜連接。像交換機一樣，路由器上的每個端口都是一個單獨的衝突域。使用訪問控制列表，路由器可以根據端口或地址阻止對網絡的訪問。這種阻塞增加了網絡的安全性。</p>
+<p><strong><br/><span style="color: #cc99ff;">network adapter(網絡適配器)</span></strong></p>
+<p>The network adapter is used to connect the workstation to the network by using media. The network adapter can be built into the motherboard of the device in several ways:</p>
+<p>1. Use integrated port clustering.<br/>2. Add to the workstation by using the internal expansion card (PCIe, PCI or mini-PCIe).<br/>3. By using an externally connected card, such as USB or PCMCIA.<br/>4. There are two main types of network adapters: wired and wireless. The cable card supports various cable types.</p>
+<p><br/>網絡適配器用於通過使用媒體將工作站連接到網絡。可以通過幾種方式將網絡適配器內置到設備的主板中：</p>
+<p>1.使用集成端口集群。<br/>2.通過使用內部擴展卡（PCIe，PCI或mini-PCIe）添加到工作站。<br/>3.通過使用外部連接的卡，例如USB或PCMCIA。<br/>4.網絡適配器有兩種主要類型：有線和無線。有線卡支持各種電纜類型。</p>
+<p><span style="color: #cc99ff;"><strong>media(媒體)</strong></span></p>
+<p>Media is a term used to classify the physical connection between two device ports. The medium consists of copper cables, optical cables and even radio frequency waves. The cost of the medium varies greatly, from the free cost of radio waves to the cheap price of unshielded twisted pair (copper cable) to the expensive price of fiber optic cables. The type of media determines the bandwidth speed, capacity and distance limits of a particular network.</p>
+<p>媒體是用於對兩個設備端口之間的物理連接進行分類的術語。介質由銅纜，光纜甚至射頻波組成。介質的成本差異很大，從無線電波的免費成本到非屏蔽雙絞線（銅纜）的價格便宜，再到光纖電纜的價格昂貴。媒體的類型確定特定網絡的帶寬速度，容量和距離限制。</p>
+<br />Network overview(網路概述) << <a href='Network overview(網路概述).html'>Previous</a> <a href='Internet media(網路媒體).html'>Next</a> >> Internet media(網路媒體)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
