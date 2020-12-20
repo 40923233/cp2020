@@ -133,23 +133,28 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">cool down(冷卻) << <a href='cool down(冷卻).html'>Previous</a> <a href='Topology-defined network(拓撲定義的網絡).html'>Next</a> >> Topology-defined network(拓撲定義的網絡)<br /><h1>Network overview(網路概述)</h1>
-<p>Various network relationships including local area networks, wide area networks, personal local area networks, and metropolitan area networks, such as client/server and peer-to-peer networks, and discuss the types of network resources.</p>
-<p>各種網絡關係包括局域網、廣域網、個人局域網和城域網各種網絡關係，例如客戶端/服務器和對等網絡，並討論網絡資源類型。</p>
-<p><span style="color: #cc99ff;"><strong>Geographically defined network(地理定義的網絡)</strong></span></p>
-<p>The geographic location covered by the network. Starting from the area around a person, the area is called a personal area network (PAN). Next, expand out to the local area network (LAN), which contains the entire office floor or building. Moving outward again, we have a metropolitan area network, which is connected by multiple LANs to cover the entire city. Finally, there is a wide area network (WAN). The largest network defined by geographic location, it can spread all over the country or even the whole world.</p>
-<p>網絡所覆蓋的地理位置。從一個人周圍的區域開始，將該區域稱為個人區域網絡（PAN）。接下來，向外擴展到局域網（LAN），該局域網包含整個辦公樓層或建築物。再次向外移動，我們有城域網，城域網通過多個LAN連接在一起而覆蓋了整個城市。最後，有了廣域網（WAN）。按地理位置定義的最大網絡，它可以遍及全國甚至遍及全球。<strong><br/></strong></p>
-<p><img alt="" height="154" src="./../images/下載.jpg" width="326"/></p>
-<p><span style="color: #cc99ff;"><strong>Personal area network(個人區域網)</strong></span></p>
-<p>The range is very small, only a few meters, and Bluetooth is one of the main content used to create PAN, although USB and infrared can also be used for these networks. The range of Bluetooth is between 1 meter and 100 meters, depending on the type of Bluetooth used.</p>
-<p>範圍很小，只有幾米，藍牙是用於創建PAN的主要內容之一，儘管USB和紅外也可以用於這些網絡。藍牙的範圍在1米至100米之間，取決於使用的藍牙類別。</p>
-<p><span style="color: #cc99ff;"><strong>Metropolitan Area Network(城域網)</strong></span></p>
-<p>Think of it as MAN. Connect scattered locations throughout the city or county. This covers a larger geographic area than a local area network, but much smaller than a wide area network.</p>
-<p><br/>將其作為MAN。連接整個城市或縣的分散位置。這比局域網覆蓋更大的地理區域，但是比廣域網覆蓋的區域小得多。</p>
-<p><span style="color: #cc99ff;"><strong>Wan(廣域網)</strong></span></p>
-<p>Connect remotely located network components together. This can be done through a virtual private network (VPN) on the Internet or using a dedicated leased line that actually connects the city pairs together. Once the two local area networks are connected, they become part of the larger WAN topology.</p>
-<p>將地理位置遙遠的網絡組件連接在一起。可以通過Internet上的虛擬專用網絡（VPN）或使用將城市對實際連接在一起的專用租用線路來完成。兩個局域網一旦連接，它們便成為更大的廣域網拓撲的一部分。</p>
-<br />cool down(冷卻) << <a href='cool down(冷卻).html'>Previous</a> <a href='Topology-defined network(拓撲定義的網絡).html'>Next</a> >> Topology-defined network(拓撲定義的網絡)</div>
+    <div id="tipue_search_content">HW3 << <a href='HW3.html'>Previous</a> <a href='進度表.html'>Next</a> >> 進度表<br /><h1>String Lists  strings lists index Exercise 6 (and Solution)</h1>
+<p><span>(字串清單)  </span><span>(字符串列表索引)</span> (練習6（和解決方案）)</p>
+<p><br/>Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)<br/>(向用戶詢問一個字符串，然後打印出該字符串是否是回文。（回文是指向前和向後讀取相同字符串的字符串。）)</p>
+<p>Discussion(討論區)<br/>Concepts for this week:(本週的概念：)</p>
+<p>List indexing(列表索引)<br/>Strings are lists(字符串是列表)<br/>List indexing(列表索引)</p>
+<p><br/>In Python (and most programming in general), you start counting lists from the number 0. The first element in a list is “number 0”, the second is “number 1”, etc.<br/>(在Python（以及大多數通用編程）中，您從數字0開始計數列表。列表中的第一個元素是“數字0”，第二個元素是“數字1”，依此類推。)</p>
+<p>As a result, when you want to get single elements out of a list, you can ask a list for that number element:<br/>(結果，當您要從列表中刪除單個元素時，可以向列表中請求該number元素：)</p>
+<p>&gt;&gt;&gt; a = [5, 10, 15, 20, 25]<br/> &gt;&gt;&gt; a[3]<br/> 20<br/> &gt;&gt;&gt; a[0]<br/> 5</p>
+<p><br/>There is also a convenient way to get sublists between two indices:<br/>(還有一種便捷的方法來獲取兩個索引之間的子列表：)</p>
+<p>&gt;&gt;&gt; a = [5, 10, 15, 20, 25, 30, 35, 40]<br/> &gt;&gt;&gt; a[1:4]<br/> [10, 15, 20]<br/> &gt;&gt;&gt; a[6:]<br/> [35, 40]<br/> &gt;&gt;&gt; a[:-1]<br/> [5, 10, 15, 20, 25, 30, 35]</p>
+<p><br/>The first number is the “start index” and the last number is the “end index.”<br/>(第一個數字是“開始索引”，最後一個數字是“結束索引”。)</p>
+<p>You can also include a third number in the indexing, to count how often you should read from the list:<br/>(您還可以在索引中包含第三個數字，以計算應該從列表中讀取的頻率：)</p>
+<p>&gt;&gt;&gt; a = [5, 10, 15, 20, 25, 30, 35, 40]<br/> &gt;&gt;&gt; a[1:5:2]<br/> [10, 20]<br/> &gt;&gt;&gt; a[3:0:-1]<br/> [15, 10, 5]</p>
+<p><br/>To read the whole list, just use the variable name (in the above examples, a), or you can also use [:] at the end of the variable name (in the above examples, a[:]).<br/>(要閱讀整個列表，只需使用變量名（在上述示例中，a），或者也可以[:]在變量名的末尾使用（在以上示例中，a[:]）)</p>
+<p>Strings are lists(字符串是列表)</p>
+<p><br/>Because strings are lists, you can do to strings everything that you do to lists. You can iterate through them:<br/>(因為字符串是列表，所以您可以將對列表所做的所有操作都字符串化。您可以遍歷它們：)</p>
+<p>string = "example"<br/> for c in string: <br/> print "one letter: " + c<br/>Will give the result:(將給出結果：)</p>
+<p>one letter: e<br/> one letter: x<br/> one letter: a<br/> one letter: m<br/> one letter: p<br/> one letter: l<br/> one letter: e</p>
+<p><br/>You can take sublists:(您可以列出子列表：)</p>
+<p>&gt;&gt;&gt; string = "example"<br/> &gt;&gt;&gt; s = string[0:5]<br/> &gt;&gt;&gt; print s<br/> examp</p>
+<p><br/>Now s has the string “examp” in it.<br/>現在，其中s包含字符串“ examp”。</p>
+<p>Moral of the story: a string is a list.<br/>(故事的寓意：字符串是一個列表。)</p><br />HW3 << <a href='HW3.html'>Previous</a> <a href='進度表.html'>Next</a> >> 進度表</div>
         
     <!-- footer -->
       <div class="container">

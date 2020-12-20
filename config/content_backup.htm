@@ -152,7 +152,16 @@
 <p></p>
 <h1>HW2</h1>
 <h2>2-1</h2>
-<p><span style="color: #000080;"><strong>import </strong></span><span style="color: #ff9900;">urllib</span>.request<br/>target_url = "<span style="color: #800080;">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776</span>"<br/>cp1a = []<br/><span style="color: #000080;"><strong>for</strong> </span>line <strong><span style="color: #000080;">in</span> </strong><span style="color: #ff9900;">urllib</span>.request.urlopen(target_url):<br/>   cp1a.append(int(line.decode('<span style="color: #800080;">utf-8</span>').rstrip()))<br/><span style="color: #000080;"><strong>from</strong> </span><span style="color: #ff9900;">random</span> <strong><span style="color: #000080;">import</span> </strong>shuffle<br/>shuffle(cp1a)<br/>num=<span style="color: #339966;">6</span><br/>b=[cp1a[i:i +num ] <span style="color: #000080;"><strong>for</strong> </span>i <span style="color: #000080;"><strong>in</strong> </span>range(<span style="color: #339966;">0</span>, len(cp1a), <span style="color: #339966;">6</span>)]<br/><strong><span style="color: #000080;">print</span></strong>(b)</p>
+<p style="text-align: left;"><span style="color: #000080;"><strong>import </strong></span><span style="color: #ff9900;">urllib</span>.request</p>
+<p style="text-align: left;"><span style="color: #339966;">導入urllib.request 模塊</span><br/>target_url = "<span style="color: #800080;">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776</span>"</p>
+<p style="text-align: left;"><span style="color: #339966;">目標網址="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</span></p>
+<p style="text-align: left;">cp1a = []</p>
+<p style="text-align: left;"><span style="color: #339966;"> 將網址內容導入[ ]為cp1a函數</span><br/><span style="color: #000080;"><strong>for</strong> </span>line <strong><span style="color: #000080;">in</span> </strong><span style="color: #ff9900;">urllib</span>.request.urlopen(target_url):<br/>   cp1a.append(int(line.decode('<span style="color: #800080;">utf-8</span>').rstrip()))</p>
+<p style="text-align: left;"> <span style="color: #339966;">對於urllib.request.urlopen(target_url)內的cp1a.append(int(line.decode('utf-8').rstrip()))</span><br/><span style="color: #000080;"><strong>from</strong> </span><span style="color: #ff9900;">random</span> <strong><span style="color: #000080;">import</span> </strong>shuffle</p>
+<p style="text-align: left;"> <span style="color: #339966;">從random模塊中導入shuffle函數</span><br/>shuffle(cp1a)</p>
+<p style="text-align: left;"><span style="color: #339966;"> 隨機排列(cp1a)</span><br/>b=[cp1a[i:i +6 ] <span style="color: #000080;"><strong>for</strong> </span>i <span style="color: #000080;"><strong>in</strong> </span>range(<span style="color: #339966;">0</span>, len(cp1a), <span style="color: #339966;">6</span>)]</p>
+<p style="text-align: left;"><span style="color: #339966;"> 函數b=[函數cpla[i:i+6]]在i內形成迴圈(0~6的字符串)</span><br/><strong><span style="color: #000080;">print</span></strong>(b)</p>
+<p style="text-align: left;"><span style="color: #339966;"> 打印輸出函數b</span></p>
 <h2>2-2</h2>
 <h2>2-3</h2>
 <p></p>
