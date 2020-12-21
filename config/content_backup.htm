@@ -166,7 +166,7 @@
 <h2>2-3</h2>
 <p></p>
 <h1>HW3</h1>
-<br/><br/>String Lists  <span>(字串清單)  </span>
+<h2>String Lists (字串清單)</h2>
 <p>strings lists index Exercise 6 (and Solution)</p>
 <p><span></span><span>(字符串列表索引)</span><span> </span>(練習6（和解決方案）)</p>
 <p><br/>Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)<br/>(向用戶詢問一個字符串，然後打印出該字符串是否是回文。（回文是指向前和向後讀取相同字符串的字符串。）)</p>
@@ -189,7 +189,7 @@
 <p>&gt;&gt;&gt; string = "example"<br/>&gt;&gt;&gt; s = string[0:5]<br/>&gt;&gt;&gt; print s<br/>examp</p>
 <p><br/>Now s has the string “examp” in it.<br/>現在，其中s包含字符串“ examp”。</p>
 <p>Moral of the story: a string is a list.<br/>(故事的寓意：字符串是一個列表。)</p>
-<br/><br/>List Comprehensions (<span>清單理解)</span>
+<h2>List Comprehensions (清單理解)</h2>
 <p>Exercise 7 (and Solution)</p>
 <p>清單理解 (練習7（和解決方案）)</p>
 <p><br/>Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.<br/>(假設我給您一個保存在變量中的列表：a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]。編寫一行Python來獲取此列表，a並創建一個僅包含該列表偶數元素的新列表。)</p>
@@ -203,7 +203,7 @@
 <p>It accomplishes the same thing as the first code sample - at the end, the ages variable has a list containing [24, 23, 24, 24, 22, 23], the ages corresponding to all the birthdates.<br/>(它完成了與第一個代碼示例相同的操作-最後，該ages變量具有一個包含的列表[24, 23, 24, 24, 22, 23]，該列表對應於所有生日的年齡。)</p>
 <p>The idea of the list comprehension is to condense the for loop and the list appending into one simple line. Notice that the for loop just shifted to the end of the list comprehension, and the part before the for keyword is the thing to append to the end of the new list.<br/>(列表理解的思想是壓縮for循環，並將列表追加到一條簡單的行中。請注意，for循環剛剛移到列表理解的末尾，而for關鍵字之前的部分是要附加到新列表末尾的東西。)</p>
 <p>You can also embed if statements into the list comprehension - check out this reference to help you out. There are many examples and a better explanation than I can ever give.<br/>(您還可以將if語句嵌入到列表理解中-請查閱此參考資料以幫助您。有許多例子和比我能提供的更好的解釋。)</p>
-<br/><br/>Check Primality Functions (<span>檢查基本功能)</span>
+<h2>Check Primality Functions (檢查基本功能)</h2>
 <p>Exercise 11 (and Solution)<br/>檢查基本功能 (練習11（和解決方案）)</p>
 <p><br/>Ask the user for a number and determine whether the number is prime or not. (For those who have forgotten, a prime number is a number that has no divisors.). You can (and should!) use your answer to Exercise 4 to help you. Take this opportunity to practice using functions, described below.<br/>(向用戶詢問一個數字，並確定該數字是否為質數。（對於那些忘記的人，質數是沒有除數的數。）您可以（並且應該！）使用練習4的答案來幫助您。藉此機會練習使用如下所述的功能。)</p>
 <p>Discussion(討論區)</p>
@@ -231,8 +231,8 @@
 <p>age = get_integer("Tell me your age: ")<br/>school_year = get_integer()<br/>if age &gt; 15:<br/>print("You are over the age of 15")<br/>print("You are in grade " + str(school_year))<br/>The first time I call the function, it will print "Tell me your age: ", but the second time, it will print "Give me a number: ", because I did not give it a string and it will execute the default behavior.<br/>(第一次調用該函數，它將打印"Tell me your age: "，但是第二次，它將打印"Give me a number: "，因為我沒有給它一個字符串，它將執行默認行為。)</p>
 <p>Recap(回顧)<br/>What a function does is wrap a piece of code that we want to reuse, labels it, and allows us to use it again relatively easily. You can add variables to the functions to make your code even MORE reusable, and you can add default arguments to these variables.<br/>(函數的作用是包裝我們要重用的一段代碼，對其進行標記，並允許我們相對容易地再次使用它。您可以將變量添加到函數中，以使代碼更加可重用，並且可以將默認參數添加到這些變量中。)</p>
 <p>Functions are a bit strange to deal with at first, but once you master them, they will be your savior in programming. Besides, the whole point of learning programming is abstraction, problem solving, breaking down problems, and that’s exactly what functions are all about.<br/>(一開始處理函數有點奇怪，但是一旦掌握了這些函數，它們就會成為您編程中的救星。此外，學習編程的重點是抽象，解決問題，分解問題，而這正是功能的全部所在。)</p>
-<h2>Birthday Months Exercise 35 (and Solution)</h2>
-<p><br/>生日月份 (練習35（和解決方案）)</p>
+<br/><br/>Birthday Months(生日月分)
+<p>Exercise 35 (and Solution)(練習35（和解決方案）)</p>
 <p>This exercise is Part 3 of 4 of the birthday data exercise series. The other exercises are: Part 1, Part 2, and Part 4.<br/>(此練習是生日數據練習系列4的第3部分。其他練習是：第1部分，第2部分和第4部分。)</p>
 <p>In the previous exercise we saved information about famous scientists’ names and birthdays to disk. In this exercise, load that JSON file from disk, extract the months of all the birthdays, and count how many scientists have a birthday in each month.<br/>(在上一個練習中，我們將有關著名科學家的姓名和生日的信息保存到磁盤上。在本練習中，從磁盤加載該JSON文件，提取所有生日的月份，併計算每個月有多少科學家生日。)</p>
 <p>Your program should output something like:<br/>(您的程序應輸出如下內容：)</p>
